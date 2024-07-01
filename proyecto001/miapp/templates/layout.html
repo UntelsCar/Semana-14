@@ -8,7 +8,7 @@
 
         {% endblock %} 
         | Semana 13 Papu
-</title>
+    </title>
 {% load static %}
         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
 </head>
@@ -34,6 +34,15 @@
             </li>
             <li>
                 <a href="{% url 'rango2' %}"> Mostrar Números [10,15]</a>
+            </li>
+            <li>
+                <a href="{% url 'listar_articulos' %}"> Artículos</a>
+             </li>
+             <li>
+                <a href="{% url 'create_articulo' %}"> Crear Artículo</a>
+             </li>
+             <li>
+                <a href="{% url 'create_full_articulo' %}"> Crear Artículo2</a>
             </li>
         </ul>
     </nav>
